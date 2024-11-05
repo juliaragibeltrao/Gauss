@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+   <style>
+    .tela-vdeo-atividade {
+  background-color: #1a315a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-vdeo-atividade .div {
+  background-color: #1a315a;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.tela-vdeo-atividade .overlap {
+  position: absolute;
+  width: 1674px;
+  height: 112px;
+  top: 53px;
+  left: -117px;
+  background-color: #2c436a;
+}
+
+.tela-vdeo-atividade .view {
+  position: absolute;
+  width: 73px;
+  height: 76px;
+  top: 18px;
+  left: 175px;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 2px solid;
+  border-color: #ffffff;
+}
+
+.tela-vdeo-atividade .overlap-wrapper {
+  position: relative;
+  width: 54px;
+  height: 53px;
+  top: 12px;
+  left: 9px;
+}
+
+.tela-vdeo-atividade .overlap-group {
+  position: relative;
+  height: 53px;
+}
+
+.tela-vdeo-atividade .view-2 {
+  position: absolute;
+  width: 51px;
+  height: 17px;
+  top: 7px;
+  left: 3px;
+}
+
+.tela-vdeo-atividade .element {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .overlap-group-2 {
+  position: relative;
+  height: 15px;
+}
+
+.tela-vdeo-atividade .ellipse {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5.19px / 6.84px;
+  transform: rotate(-8.09deg);
+}
+
+.tela-vdeo-atividade .ellipse-2 {
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  top: 3px;
+  left: 3px;
+  background-color: #fff0c5;
+  border-radius: 1.94px / 2.56px;
+  transform: rotate(-8.09deg);
+}
+
+.tela-vdeo-atividade .overlap-group-wrapper {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 2px;
+  left: 39px;
+}
+
+.tela-vdeo-atividade .ellipse-wrapper {
+  position: relative;
+  width: 10px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-4.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .ellipse-3 {
+  position: relative;
+  width: 4px;
+  height: 5px;
+  top: 3px;
+  left: 4px;
+  background-color: #e9debd;
+  border-radius: 1.94px / 2.56px;
+  transform: rotate(-171.91deg);
+}
+
+.tela-vdeo-atividade .image {
+  position: absolute;
+  width: 54px;
+  height: 53px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .div-wrapper {
+  position: absolute;
+  width: 17px;
+  height: 13px;
+  top: 30px;
+  left: 18px;
+  transform: rotate(16.45deg);
+}
+
+.tela-vdeo-atividade .overlap-2 {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  left: -1px;
+}
+
+.tela-vdeo-atividade .vector {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 2px;
+  left: 1px;
+  transform: rotate(-16.45deg);
+}
+
+.tela-vdeo-atividade .intersect {
+  position: absolute;
+  width: 12px;
+  height: 4px;
+  top: 9px;
+  left: 6px;
+  transform: rotate(-16.45deg);
+}
+
+.tela-vdeo-atividade .img {
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 3px;
+  left: 4px;
+  transform: rotate(-16.45deg);
+}
+
+.tela-vdeo-atividade .view-3 {
+  position: absolute;
+  width: 33px;
+  height: 25px;
+  top: 14px;
+  left: 10px;
+  transform: rotate(16.45deg);
+}
+
+.tela-vdeo-atividade .overlap-3 {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: 6px;
+  left: 0;
+}
+
+.tela-vdeo-atividade .element-2 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 2px;
+  left: 2px;
+  background-color: #1d1d1d;
+  border-radius: 5.63px / 6.01px;
+  transform: rotate(-20.83deg);
+}
+
+.tela-vdeo-atividade .element-3 {
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  top: 6px;
+  left: 5px;
+  background-color: #3d3d3d;
+  border-radius: 3.46px / 3.76px;
+}
+
+.tela-vdeo-atividade .element-4 {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  top: 11px;
+  left: 3px;
+  background-color: #ffffff;
+  border-radius: 6.29px / 2.41px;
+  transform: rotate(-22.47deg);
+}
+
+.tela-vdeo-atividade .view-4 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 1px;
+  left: 8px;
+  background-color: #ffffff;
+  border-radius: 0.96px / 1.04px;
+}
+
+.tela-vdeo-atividade .overlap-4 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  top: 0;
+  left: 16px;
+}
+
+.tela-vdeo-atividade .element-5 {
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  top: 5px;
+  left: 5px;
+  background-color: #3d3d3d;
+  border-radius: 3.46px / 3.76px;
+}
+
+.tela-vdeo-atividade .element-6 {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  top: 10px;
+  left: 4px;
+  background-color: #ffffff;
+  border-radius: 6.32px / 2.4px;
+  transform: rotate(-26.40deg);
+}
+
+.tela-vdeo-atividade .view-5 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 7px;
+  background-color: #ffffff;
+  border-radius: 1.12px / 1.21px;
+}
+
+.tela-vdeo-atividade .view-6 {
+  position: absolute;
+  width: 38px;
+  height: 21px;
+  top: 13px;
+  left: 7px;
+  transform: rotate(-14.70deg);
+}
+
+.tela-vdeo-atividade .overlap-5 {
+  position: relative;
+  height: 21px;
+}
+
+.tela-vdeo-atividade .rectangle {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  top: 1px;
+  left: 5px;
+  background-color: #b8d3ff4c;
+  transform: rotate(36.76deg);
+}
+
+.tela-vdeo-atividade .rectangle-2 {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  top: 7px;
+  left: 30px;
+  background-color: #b8d3ff4c;
+  transform: rotate(36.76deg);
+}
+
+.tela-vdeo-atividade .line {
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  top: 10px;
+  left: 16px;
+  transform: rotate(14.70deg);
+}
+
+.tela-vdeo-atividade .ellipse-4 {
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 3px;
+  left: 20px;
+  border-radius: 8.69px / 9.48px;
+  border: 0.97px solid;
+  border-color: #1a315a;
+  box-shadow: inset 0px 0.65px 0.65px #3e73f8, 0.97px 0.65px 1.29px #00000026;
+}
+
+.tela-vdeo-atividade .ellipse-5 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border-radius: 8.45px / 9.22px;
+  border: 0.97px solid;
+  border-color: #1a315a;
+  box-shadow: inset 0px 0.65px 0.65px #3e73f8, 0.97px 0.65px 1.29px #00000026;
+}
+
+.tela-vdeo-atividade .text-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 265px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 38px;
+  letter-spacing: 3.80px;
+  line-height: normal;
+}
+
+.tela-vdeo-atividade .idioma-do-site {
+  position: absolute;
+  top: 34px;
+  left: 1171px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.tela-vdeo-atividade .span {
+  font-weight: 500;
+  color: #ebf2ffb0;
+}
+
+.tela-vdeo-atividade .text-wrapper-2 {
+  color: #ffffff;
+}
+
+.tela-vdeo-atividade .overlap-6 {
+  position: absolute;
+  width: 324px;
+  height: 392px;
+  top: 210px;
+  left: 1077px;
+  background-color: #2c436a;
+  border-radius: 20px;
+}
+
+.tela-vdeo-atividade .text-wrapper-3 {
+  position: absolute;
+  height: 29px;
+  top: 29px;
+  left: 106px;
+  -webkit-text-stroke: 0.5px #c1c1c1;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 2.40px;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.tela-vdeo-atividade .boto-contedo-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 9px;
+  left: 28px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-122.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .boto-contedo {
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  top: 12px;
+  left: 16px;
+}
+
+.tela-vdeo-atividade .text-wrapper-4 {
+  position: absolute;
+  width: 181px;
+  height: 25px;
+  top: 132px;
+  left: 108px;
+  -webkit-text-stroke: 0.5px #c1c1c1;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 2.40px;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.tela-vdeo-atividade .group-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 100px;
+  left: 26px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-123.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .group {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+.tela-vdeo-atividade .boto-atividades-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 199px;
+  left: 26px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-124.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .boto-atividades {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 17px;
+  left: 15px;
+}
+
+.tela-vdeo-atividade .text-wrapper-5 {
+  position: absolute;
+  width: 181px;
+  height: 25px;
+  top: 230px;
+  left: 104px;
+  -webkit-text-stroke: 0.5px #c1c1c1;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffc100;
+  font-size: 24px;
+  letter-spacing: 2.40px;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.tela-vdeo-atividade .text-wrapper-6 {
+  position: absolute;
+  height: 29px;
+  top: 312px;
+  left: 108px;
+  -webkit-text-stroke: 0.5px #c1c1c1;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 2.40px;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.tela-vdeo-atividade .boto-jogos-wrapper {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 291px;
+  left: 26px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-121.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .boto-jogos {
+  position: absolute;
+  width: 45px;
+  height: 41px;
+  top: 13px;
+  left: 15px;
+}
+
+.tela-vdeo-atividade .overlap-7 {
+  position: absolute;
+  width: 767px;
+  height: 45px;
+  top: 185px;
+  left: 58px;
+}
+
+.tela-vdeo-atividade .rectangle-3 {
+  position: absolute;
+  width: 646px;
+  height: 43px;
+  top: 2px;
+  left: 0;
+  background-color: #ffc100;
+  border-radius: 20px;
+}
+
+.tela-vdeo-atividade .p {
+  position: absolute;
+  width: 749px;
+  top: -32px;
+  left: 18px;
+  font-family: "Inter", Helvetica;
+  font-weight:700;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 1.44px;
+  line-height: normal;
+}
+
+
+.tela-vdeo-atividade .overlap-8 {
+  position: absolute;
+  width: 362px;
+  height: 400px;
+  top: 632px;
+  left: 1064px;
+}
+
+.tela-vdeo-atividade .rectangle-4 {
+  position: absolute;
+  width: 311px;
+  height: 56px;
+  top: 0;
+  left: 14px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.tela-vdeo-atividade .rectangle-5 {
+  position: absolute;
+  width: 311px;
+  height: 56px;
+  top: 89px;
+  left: 14px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.tela-vdeo-atividade .download-document {
+  position: absolute;
+  width: 60px;
+  height: 61px;
+  top: 0;
+  left: 34px;
+}
+
+.tela-vdeo-atividade .text-wrapper-7 {
+  position: absolute;
+  height: 39px;
+  top: 4px;
+  left: 96px;
+  -webkit-text-stroke: 0.5px #1a315a;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #1a315a;
+  font-size: 32px;
+  letter-spacing: 3.20px;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.tela-vdeo-atividade .text-wrapper-8 {
+  position: absolute;
+  height: 39px;
+  top: 92px;
+  left: 96px;
+  -webkit-text-stroke: 0.5px #1a315a;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #1a315a;
+  font-size: 32px;
+  letter-spacing: 3.20px;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.tela-vdeo-atividade .chat-bubble-writing {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 77px;
+  left: 16px;
+}
+
+.tela-vdeo-atividade .view-7 {
+  position: absolute;
+  width: 362px;
+  height: 356px;
+  top: 44px;
+  left: 0;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 0px none;
+  box-shadow: inset 0px 4px 4px #00000040;
+}
+
+.tela-vdeo-atividade .view-8 {
+  position: absolute;
+  width: 209px;
+  height: 316px;
+  top: 114px;
+  left: 76px;
+}
+
+.tela-vdeo-atividade .overlap-9 {
+  position: relative;
+  height: 272px;
+}
+
+.tela-vdeo-atividade .vector-2 {
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  top: 185px;
+  left: 25px;
+}
+
+.tela-vdeo-atividade .vector-3 {
+  position: absolute;
+  width: 40px;
+  height: 45px;
+  top: 185px;
+  left: 143px;
+}
+
+.tela-vdeo-atividade .vector-4 {
+  position: absolute;
+  width: 132px;
+  height: 54px;
+  top: 180px;
+  left: 38px;
+}
+
+.tela-vdeo-atividade .vector-5 {
+  position: absolute;
+  width: 132px;
+  height: 44px;
+  top: 190px;
+  left: 37px;
+}
+
+.tela-vdeo-atividade .vector-6 {
+  position: absolute;
+  width: 119px;
+  height: 28px;
+  top: 179px;
+  left: 52px;
+}
+
+.tela-vdeo-atividade .image-2 {
+  position: absolute;
+  width: 209px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .overlap-10 {
+  position: relative;
+  height: 200px;
+}
+
+.tela-vdeo-atividade .view-9 {
+  position: absolute;
+  width: 196px;
+  height: 63px;
+  top: 27px;
+  left: 10px;
+}
+
+.tela-vdeo-atividade .element-7 {
+  position: absolute;
+  width: 46px;
+  height: 57px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .overlap-group-3 {
+  position: relative;
+  width: 47px;
+  height: 57px;
+}
+
+.tela-vdeo-atividade .ellipse-6 {
+  position: absolute;
+  width: 40px;
+  height: 52px;
+  top: 3px;
+  left: 3px;
+  background-color: #ffffff;
+  border-radius: 20.12px / 25.78px;
+  transform: rotate(-7.86deg);
+}
+
+.tela-vdeo-atividade .ellipse-7 {
+  position: absolute;
+  width: 15px;
+  height: 19px;
+  top: 13px;
+  left: 13px;
+  background-color: #fff0c5;
+  border-radius: 7.53px / 9.65px;
+  transform: rotate(-7.86deg);
+}
+
+.tela-vdeo-atividade .element-8 {
+  position: absolute;
+  width: 45px;
+  height: 57px;
+  top: 7px;
+  left: 152px;
+}
+
+.tela-vdeo-atividade .overlap-11 {
+  position: relative;
+  width: 39px;
+  height: 51px;
+  top: 3px;
+  left: 3px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-4-1.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .ellipse-8 {
+  position: relative;
+  width: 15px;
+  height: 19px;
+  top: 11px;
+  left: 16px;
+  background-color: #e9debd;
+  border-radius: 7.53px / 9.65px;
+  transform: rotate(-172.14deg);
+}
+
+.tela-vdeo-atividade .view-10 {
+  position: absolute;
+  width: 124px;
+  height: 76px;
+  top: 74px;
+  left: 39px;
+  transform: rotate(16.00deg);
+}
+
+.tela-vdeo-atividade .overlap-12 {
+  position: absolute;
+  width: 54px;
+  height: 56px;
+  top: 20px;
+  left: -1px;
+}
+
+.tela-vdeo-atividade .element-9 {
+  position: absolute;
+  width: 43px;
+  height: 46px;
+  top: 5px;
+  left: 5px;
+  background-color: #1d1d1d;
+  border-radius: 21.67px / 22.8px;
+  transform: rotate(-16.00deg);
+}
+
+.tela-vdeo-atividade .view-11 {
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  top: 2px;
+  left: 30px;
+  background-color: #ffffff;
+  border-radius: 3.71px / 3.93px;
+}
+
+.tela-vdeo-atividade .overlap-13 {
+  position: absolute;
+  width: 54px;
+  height: 56px;
+  top: 0;
+  left: 70px;
+}
+
+.tela-vdeo-atividade .view-12 {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 1px;
+  left: 27px;
+  background-color: #ffffff;
+  border-radius: 4.32px / 4.58px;
+}
+
+.tela-vdeo-atividade .view-13 {
+  position: absolute;
+  width: 159px;
+  height: 103px;
+  top: 50px;
+  left: 24px;
+  transform: rotate(-14.30deg);
+}
+
+.tela-vdeo-atividade .overlap-14 {
+  position: relative;
+  width: 161px;
+  height: 103px;
+  left: -1px;
+}
+
+.tela-vdeo-atividade .rectangle-6 {
+  position: absolute;
+  width: 15px;
+  height: 59px;
+  top: 9px;
+  left: 26px;
+  background-color: #b8d3ff4c;
+  transform: rotate(35.78deg);
+}
+
+.tela-vdeo-atividade .rectangle-7 {
+  position: absolute;
+  width: 10px;
+  height: 62px;
+  top: 35px;
+  left: 122px;
+  background-color: #b8d3ff1a;
+  transform: rotate(35.78deg);
+}
+
+.tela-vdeo-atividade .line-2 {
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  top: 47px;
+  left: 71px;
+  transform: rotate(14.30deg);
+}
+
+.tela-vdeo-atividade .ellipse-9 {
+  position: absolute;
+  width: 68px;
+  height: 71px;
+  top: 24px;
+  left: 86px;
+  border-radius: 33.77px / 35.65px;
+  border: 3.94px solid;
+  border-color: #1a315a;
+  transform: rotate(14.30deg);
+  box-shadow: inset 0px 2.63px 2.63px #3e73f8, 3.94px 2.63px 5.25px #00000026;
+}
+
+.tela-vdeo-atividade .ellipse-10 {
+  position: absolute;
+  width: 66px;
+  height: 69px;
+  top: 7px;
+  left: 8px;
+  border-radius: 32.84px / 34.66px;
+  border: 3.94px solid;
+  border-color: #1a315a;
+  transform: rotate(14.30deg);
+  box-shadow: inset 0px 2.63px 2.63px #3e73f8, 3.94px 2.63px 5.25px #00000026;
+}
+
+.tela-vdeo-atividade .mask-group {
+  position: absolute;
+  width: 28px;
+  height: 30px;
+  top: 151px;
+  left: 88px;
+}
+
+.tela-vdeo-atividade .vector-7 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 152px;
+  left: 93px;
+}
+
+.tela-vdeo-atividade .ellipse-11 {
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  top: 123px;
+  left: 94px;
+  background-color: #1e1e1e;
+  border-radius: 9.71px / 6.39px;
+}
+
+.tela-vdeo-atividade .ellipse-12 {
+  position: absolute;
+  width: 5px;
+  height: 3px;
+  top: 126px;
+  left: 96px;
+  background-color: #ffffff;
+  border-radius: 2.47px / 1.72px;
+  transform: rotate(-24.72deg);
+}
+
+.tela-vdeo-atividade .view-14 {
+  position: absolute;
+  width: 131px;
+  height: 95px;
+  top: 177px;
+  left: 39px;
+}
+
+.tela-vdeo-atividade .overlap-15 {
+  position: absolute;
+  width: 70px;
+  height: 94px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .vector-8 {
+  position: absolute;
+  width: 58px;
+  height: 13px;
+  top: 0;
+  left: 4px;
+}
+
+.tela-vdeo-atividade .vector-9 {
+  position: absolute;
+  width: 61px;
+  height: 54px;
+  top: 3px;
+  left: 0;
+}
+
+.tela-vdeo-atividade .rectangle-8 {
+  position: absolute;
+  width: 10px;
+  height: 82px;
+  top: 13px;
+  left: 61px;
+  background-color: #eabf36;
+}
+
+.tela-vdeo-atividade .overlap-16 {
+  position: absolute;
+  width: 61px;
+  height: 57px;
+  top: 0;
+  left: 70px;
+}
+
+.tela-vdeo-atividade .vector-10 {
+  position: absolute;
+  width: 58px;
+  height: 13px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .ellipse-13 {
+  position: absolute;
+  width: 38px;
+  height: 41px;
+  top: 204px;
+  left: 18px;
+  background-color: #ffffff;
+  border-radius: 18.93px / 20.26px;
+}
+
+.tela-vdeo-atividade .ellipse-14 {
+  position: absolute;
+  width: 38px;
+  height: 41px;
+  top: 204px;
+  left: 151px;
+  background-color: #ffffff;
+  border-radius: 18.93px / 20.26px;
+  box-shadow: inset -2px -2px 12px #d0e0ff;
+}
+
+.tela-vdeo-atividade .vector-11 {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 38px;
+  left: 112px;
+}
+
+.tela-vdeo-atividade .CONTINUAR-wrapper {
+  position: absolute;
+  width: 266px;
+  height: 57px;
+  top: 912px;
+  left: 720px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.tela-vdeo-atividade .CONTINUAR {
+  position: absolute;
+  height: 39px;
+  top: 6px;
+  left: 10px;
+  -webkit-text-stroke: 0.5px #1a315a;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #1a315a;
+  font-size: 32px;
+  letter-spacing: 3.20px;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.tela-vdeo-atividade .quest-o-qual {
+  position: absolute;
+  width: 958px;
+  top: 230px;
+  left: 67px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 1.35px;
+  line-height: normal;
+}
+
+.tela-vdeo-atividade .text-wrapper-9 {
+  letter-spacing: 0.61px;
+}
+
+.tela-vdeo-atividade .text-wrapper-10 {
+  font-size: 29px;
+  letter-spacing: 0.25px;
+}
+
+.tela-vdeo-atividade .text-wrapper-11 {
+  position: absolute;
+  width: 272px;
+  top: 411px;
+  left: 131px;
+  transform: rotate(0.06deg);
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 1.20px;
+  line-height: normal;
+}
+
+.tela-vdeo-atividade .text-wrapper-12 {
+  position: absolute;
+  width: 272px;
+  top: 498px;
+  left: 131px;
+  transform: rotate(0.06deg);
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 1.20px;
+  line-height: normal;
+}
+
+.tela-vdeo-atividade .overlap-17 {
+  position: absolute;
+  width: 272px;
+  height: 48px;
+  top: 577px;
+  left: 133px;
+}
+
+.tela-vdeo-atividade .text-wrapper-13 {
+  position: absolute;
+  width: 272px;
+  top: 0;
+  left: 0;
+  transform: rotate(0.06deg);
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 1.20px;
+  line-height: normal;
+}
+
+.tela-vdeo-atividade .overlap-18 {
+  position: absolute;
+  width: 272px;
+  height: 48px;
+  top: 651px;
+  left: 135px;
+}
+
+.tela-vdeo-atividade .ellipse-15 {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  top: 412px;
+  left: 73px;
+}
+
+.tela-vdeo-atividade .ellipse-16 {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  top: 499px;
+  left: 73px;
+}
+
+.tela-vdeo-atividade .img-wrapper {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  top: 578px;
+  left: 75px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg);
+  background-size: 100% 100%;
+}
+
+.tela-vdeo-atividade .ellipse-17 {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  top: 0;
+  left: 0;
+}
+
+.tela-vdeo-atividade .overlap-19 {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  top: 652px;
+  left: 77px;
+  background-image: url(https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg);
+  background-size: 100% 100%;
+}
+   </style> 
+   </head>
+   <body>
+     <div class="tela-vdeo-atividade">
+       <div class="div">
+         <div class="overlap">
+           <div class="view">
+             <div class="overlap-wrapper">
+               <div class="overlap-group">
+                 <div class="view-2">
+                   <div class="element">
+                     <div class="overlap-group-2">
+                       <div class="ellipse"></div>
+                       <div class="ellipse-2"></div>
+                     </div>
+                   </div>
+                   <div class="overlap-group-wrapper">
+                     <div class="ellipse-wrapper"><div class="ellipse-3"></div></div>
+                   </div>
+                 </div>
+                 <img class="image" src="https://c.animaapp.com/UkVVANj7/img/-.svg" />
+                 <div class="div-wrapper">
+                   <div class="overlap-2">
+                     <img class="vector" src="https://c.animaapp.com/UkVVANj7/img/vector-24.svg" />
+                     <img class="intersect" src="https://c.animaapp.com/UkVVANj7/img/intersect.svg" />
+                     <img class="img" src="https://c.animaapp.com/UkVVANj7/img/vector-26.svg" />
+                   </div>
+                 </div>
+                 <div class="view-3">
+                   <div class="overlap-3">
+                     <div class="element-2"></div>
+                     <div class="element-3"></div>
+                     <div class="element-4"></div>
+                     <div class="view-4"></div>
+                   </div>
+                   <div class="overlap-4">
+                     <div class="element-2"></div>
+                     <div class="element-5"></div>
+                     <div class="element-6"></div>
+                     <div class="view-5"></div>
+                   </div>
+                 </div>
+                 <div class="view-6">
+                   <div class="overlap-5">
+                     <div class="rectangle"></div>
+                     <div class="rectangle-2"></div>
+                     <img class="line" src="https://c.animaapp.com/UkVVANj7/img/line-1.svg" />
+                     <div class="ellipse-4"></div>
+                     <div class="ellipse-5"></div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="text-wrapper">Gauss</div>
+           <p class="idioma-do-site">
+             <span class="span">Idioma do site:Português</span> <span class="text-wrapper-2">&nbsp;</span>
+           </p>
+         </div>
+         <div class="overlap-6">
+           <div id= "conteudo" class="text-wrapper-3">CONTEÚDO</div>
+           <div class="boto-contedo-wrapper">
+             <img class="boto-contedo" src="https://c.animaapp.com/UkVVANj7/img/bot-o-conte-do@2x.png" />
+           </div>
+           <div id="video-aula" class="text-wrapper-4">VÍDEO AULA</div>
+           <div class="group-wrapper">
+             <img class="group" src="https://c.animaapp.com/UkVVANj7/img/group-20@2x.png" />
+           </div>
+           <div class="boto-atividades-wrapper">
+             <img class="boto-atividades" src="https://c.animaapp.com/UkVVANj7/img/bot-o-atividades@2x.png" />
+           </div>
+           <div class="text-wrapper-5">ATIVIDADES</div>
+           <div id= "jogos" class="text-wrapper-6">JOGOS</div>
+           <div class="boto-jogos-wrapper">
+             <img class="boto-jogos" src="https://c.animaapp.com/UkVVANj7/img/bot-o-jogos@2x.png" />
+           </div>
+         </div>
+         <div class="overlap-7">
+           <div class="rectangle-3"></div>
+           <p class="p">Aula 01- Medidas de Posição</p>
+         </div>
+         <div class="overlap-8">
+           <div class="rectangle-4"></div>
+           <div class="rectangle-5"></div>
+           <img
+             class="download-document"
+             src="https://c.animaapp.com/UkVVANj7/img/download-document-word---iconsvg-co.svg"
+           />
+           <div class="text-wrapper-7">DOWNLOAD</div>
+           <div class="text-wrapper-8">PROFESSOR</div>
+           <img
+             class="chat-bubble-writing"
+             src="https://c.animaapp.com/UkVVANj7/img/chat-bubble-writing---iconsvg-co.svg"
+           />
+           <div class="view-7">
+             <div class="view-8">
+               <div class="overlap-9">
+                 <img class="vector-2" src="https://c.animaapp.com/UkVVANj7/img/vector-66.svg" />
+                 <img class="vector-3" src="https://c.animaapp.com/UkVVANj7/img/vector-67.svg" />
+                 <img class="vector-4" src="https://c.animaapp.com/UkVVANj7/img/vector-55.svg" />
+                 <img class="vector-5" src="https://c.animaapp.com/UkVVANj7/img/vector-64.svg" />
+                 <img class="vector-6" src="https://c.animaapp.com/UkVVANj7/img/vector-65.svg" />
+                 <div class="image-2">
+                   <div class="overlap-10">
+                     <div class="view-9">
+                       <div class="element-7">
+                         <div class="overlap-group-3">
+                           <div class="ellipse-6"></div>
+                           <div class="ellipse-7"></div>
+                         </div>
+                       </div>
+                       <div class="element-8">
+                         <div class="overlap-11"><div class="ellipse-8"></div></div>
+                       </div>
+                     </div>
+                     <img class="image-2" src="https://c.animaapp.com/UkVVANj7/img/--1.svg" />
+                     <div class="view-10">
+                       <div class="overlap-12">
+                         <div class="element-9"></div>
+                         <div class="view-11"></div>
+                       </div>
+                       <div class="overlap-13">
+                         <div class="element-9"></div>
+                         <div class="view-12"></div>
+                       </div>
+                     </div>
+                     <div class="view-13">
+                       <div class="overlap-14">
+                         <div class="rectangle-6"></div>
+                         <div class="rectangle-7"></div>
+                         <img class="line-2" src="https://c.animaapp.com/UkVVANj7/img/line-1-1.svg" />
+                         <div class="ellipse-9"></div>
+                         <div class="ellipse-10"></div>
+                       </div>
+                     </div>
+                     <img class="mask-group" src="https://c.animaapp.com/UkVVANj7/img/mask-group@2x.png" />
+                     <img class="vector-7" src="https://c.animaapp.com/UkVVANj7/img/vector-21.svg" />
+                   </div>
+                 </div>
+                 <div class="ellipse-11"></div>
+                 <div class="ellipse-12"></div>
+                 <div class="view-14">
+                   <div class="overlap-15">
+                     <img class="vector-8" src="https://c.animaapp.com/UkVVANj7/img/vector-62.svg" />
+                     <img class="vector-9" src="https://c.animaapp.com/UkVVANj7/img/vector-61.svg" />
+                     <div class="rectangle-8"></div>
+                   </div>
+                   <div class="overlap-16">
+                     <img class="vector-10" src="https://c.animaapp.com/UkVVANj7/img/vector-63.svg" />
+                     <img class="vector-9" src="https://c.animaapp.com/UkVVANj7/img/vector-60.svg" />
+                   </div>
+                 </div>
+                 <div class="ellipse-13"></div>
+                 <div class="ellipse-14"></div>
+               </div>
+             </div>
+             <img class="vector-11" src="https://c.animaapp.com/UkVVANj7/img/vector.svg" />
+           </div>
+         </div>
+         <div class="CONTINUAR-wrapper"><div class="CONTINUAR">CONTINUAR &gt;</div></div>
+         <p class="quest-o-qual">
+           <span class="text-wrapper-9">Questão 01.<br /></span>
+           <span class="text-wrapper-10"
+             >Qual medida de tendência central representa o valor que mais se repete em um conjunto de dados?</span
+           >
+         </p>
+         <div class="text-wrapper-11">A) Média.</div>
+         <div class="text-wrapper-12">B) Mediana.</div>
+         <div class="overlap-17">
+           <div class="text-wrapper-13">C) Moda.</div>
+           <div class="text-wrapper-13">C) Moda.</div>
+         </div>
+         <div class="overlap-18">
+           <div class="text-wrapper-13">C) Variância.</div>
+           <div class="text-wrapper-13">C)</div>
+         </div>
+         <img class="ellipse-15" src="https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg" />
+         <img class="ellipse-16" src="https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg" />
+         <div class="img-wrapper">
+           <img class="ellipse-17" src="https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg" />
+         </div>
+         <div class="overlap-19">
+           <img class="ellipse-17" src="https://c.animaapp.com/UkVVANj7/img/ellipse-131.svg" />
+         </div>
+       </div>
+     </div>
+     <script>
+       
+       function redirecionar(url) {
+         window.location.href = url;
+       }
+       
+       document.getElementById("jogos").onclick = function() {
+       redirecionar("telajogos.html"); 
+       };
+
+       document.getElementById("conteudo").onclick = function() {
+       redirecionar("telaconteudo.html"); 
+       };
+
+       document.getElementById("video-aula").onclick = function() {
+       redirecionar("telavideoaula.html"); 
+       };
+      
+     </script>
+   </body>
+ </html>

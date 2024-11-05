@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+
+<style>
+	
+.questionrio {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.questionrio .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.questionrio .text-wrapper {
+  position: absolute;
+  top: 29px;
+  left: 144px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #1a315a;
+  font-size: 48px;
+  letter-spacing: 4.80px;
+  line-height: normal;
+}
+
+.questionrio .view {
+  position: absolute;
+  width: 73px;
+  height: 76px;
+  top: 21px;
+  left: 55px;
+  background-color: #1a315a;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.questionrio .overlap-wrapper {
+  position: relative;
+  width: 54px;
+  height: 53px;
+  top: 12px;
+  left: 9px;
+}
+
+.questionrio .overlap {
+  position: relative;
+  height: 53px;
+}
+
+.questionrio .view-2 {
+  position: absolute;
+  width: 51px;
+  height: 17px;
+  top: 7px;
+  left: 3px;
+}
+
+.questionrio .element {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.questionrio .overlap-group {
+  position: relative;
+  height: 15px;
+}
+
+.questionrio .ellipse {
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 5.19px / 6.84px;
+  transform: rotate(-8.09deg);
+}
+
+.questionrio .ellipse-2 {
+  position: absolute;
+  width: 4px;
+  height: 5px;
+  top: 3px;
+  left: 3px;
+  background-color: #fff0c5;
+  border-radius: 1.94px / 2.56px;
+  transform: rotate(-8.09deg);
+}
+
+.questionrio .overlap-group-wrapper {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 2px;
+  left: 39px;
+}
+
+.questionrio .ellipse-wrapper {
+  position: relative;
+  width: 10px;
+  height: 14px;
+  top: 1px;
+  left: 1px;
+  background-image: url(https://c.animaapp.com/2VmB2s4P/img/ellipse-4.svg);
+  background-size: 100% 100%;
+}
+
+.questionrio .ellipse-3 {
+  position: relative;
+  width: 4px;
+  height: 5px;
+  top: 3px;
+  left: 4px;
+  background-color: #e9debd;
+  border-radius: 1.94px / 2.56px;
+  transform: rotate(-171.91deg);
+}
+
+.questionrio .image {
+  position: absolute;
+  width: 54px;
+  height: 53px;
+  top: 0;
+  left: 0;
+}
+
+.questionrio .div-wrapper {
+  position: absolute;
+  width: 17px;
+  height: 13px;
+  top: 30px;
+  left: 18px;
+  transform: rotate(16.45deg);
+}
+
+.questionrio .overlap-2 {
+  position: relative;
+  width: 20px;
+  height: 16px;
+  left: -1px;
+}
+
+.questionrio .vector {
+  position: absolute;
+  width: 17px;
+  height: 11px;
+  top: 2px;
+  left: 1px;
+  transform: rotate(-16.45deg);
+}
+
+.questionrio .intersect {
+  position: absolute;
+  width: 12px;
+  height: 4px;
+  top: 9px;
+  left: 6px;
+  transform: rotate(-16.45deg);
+}
+
+.questionrio .img {
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 3px;
+  left: 4px;
+  transform: rotate(-16.45deg);
+}
+
+.questionrio .view-3 {
+  position: absolute;
+  width: 33px;
+  height: 25px;
+  top: 14px;
+  left: 10px;
+  transform: rotate(16.45deg);
+}
+
+.questionrio .overlap-3 {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  top: 6px;
+  left: 0;
+}
+
+.questionrio .element-2 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 2px;
+  left: 2px;
+  background-color: #1d1d1d;
+  border-radius: 5.63px / 6.01px;
+  transform: rotate(-20.83deg);
+}
+
+.questionrio .element-3 {
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  top: 6px;
+  left: 5px;
+  background-color: #3d3d3d;
+  border-radius: 3.46px / 3.76px;
+}
+
+.questionrio .element-4 {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  top: 11px;
+  left: 3px;
+  background-color: #ffffff;
+  border-radius: 6.29px / 2.41px;
+  transform: rotate(-22.47deg);
+}
+
+.questionrio .view-4 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 1px;
+  left: 8px;
+  background-color: #ffffff;
+  border-radius: 0.96px / 1.04px;
+}
+
+.questionrio .overlap-4 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  top: 0;
+  left: 16px;
+}
+
+.questionrio .element-5 {
+  position: absolute;
+  width: 7px;
+  height: 8px;
+  top: 5px;
+  left: 5px;
+  background-color: #3d3d3d;
+  border-radius: 3.46px / 3.76px;
+}
+
+.questionrio .element-6 {
+  position: absolute;
+  width: 13px;
+  height: 5px;
+  top: 10px;
+  left: 4px;
+  background-color: #ffffff;
+  border-radius: 6.32px / 2.4px;
+  transform: rotate(-26.40deg);
+}
+
+.questionrio .view-5 {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: 0;
+  left: 7px;
+  background-color: #ffffff;
+  border-radius: 1.12px / 1.21px;
+}
+
+.questionrio .view-6 {
+  position: absolute;
+  width: 38px;
+  height: 21px;
+  top: 13px;
+  left: 7px;
+  transform: rotate(-14.70deg);
+}
+
+.questionrio .overlap-5 {
+  position: relative;
+  height: 21px;
+}
+
+.questionrio .rectangle {
+  position: absolute;
+  width: 4px;
+  height: 15px;
+  top: 1px;
+  left: 5px;
+  background-color: #b8d3ff4c;
+  transform: rotate(36.76deg);
+}
+
+.questionrio .rectangle-2 {
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  top: 7px;
+  left: 30px;
+  background-color: #b8d3ff4c;
+  transform: rotate(36.76deg);
+}
+
+.questionrio .line {
+  position: absolute;
+  width: 5px;
+  height: 2px;
+  top: 10px;
+  left: 16px;
+  transform: rotate(14.70deg);
+}
+
+.questionrio .ellipse-4 {
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 3px;
+  left: 20px;
+  border-radius: 8.69px / 9.48px;
+  border: 0.97px solid;
+  border-color: #1a315a;
+  box-shadow: inset 0px 0.65px 0.65px #3e73f8, 0.97px 0.65px 1.29px #00000026;
+}
+
+.questionrio .ellipse-5 {
+  position: absolute;
+  width: 17px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border-radius: 8.45px / 9.22px;
+  border: 0.97px solid;
+  border-color: #1a315a;
+  box-shadow: inset 0px 0.65px 0.65px #3e73f8, 0.97px 0.65px 1.29px #00000026;
+}
+
+.questionrio .idioma-do-site {
+  position: absolute;
+  top: 24px;
+  left: 983px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .span {
+  font-weight: 500;
+  color: #4e5460b0;
+}
+
+.questionrio .text-wrapper-2 {
+  color: #000000;
+}
+
+.questionrio .rectangle-3 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 1225px;
+  left: -4687px;
+}
+
+.questionrio .overlap-6 {
+  position: absolute;
+  width: 1323px;
+  height: 867px;
+  top: 115px;
+  left: 55px;
+  background-color: #1a315a;
+  border-radius: 88px;
+}
+
+.questionrio .view-7 {
+  position: absolute;
+  width: 154px;
+  height: 127px;
+  top: 140px;
+  left: 141px;
+  transform: rotate(8.12deg);
+}
+
+.questionrio .overlap-7 {
+  position: relative;
+  width: 170px;
+  height: 143px;
+  top: -5px;
+  left: -10px;
+}
+
+.questionrio .view-8 {
+  position: absolute;
+  width: 145px;
+  height: 40px;
+  top: 22px;
+  left: 18px;
+}
+
+.questionrio .element-7 {
+  position: absolute;
+  width: 34px;
+  height: 36px;
+  top: 0;
+  left: 0;
+}
+
+.questionrio .overlap-group-2 {
+  position: relative;
+  width: 33px;
+  height: 36px;
+}
+
+.questionrio .ellipse-6 {
+  position: absolute;
+  width: 30px;
+  height: 33px;
+  top: 2px;
+  left: 2px;
+  background-color: #ffffff;
+  border-radius: 14.79px / 16.39px;
+  transform: rotate(-6.75deg);
+}
+
+.questionrio .ellipse-7 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 8px;
+  left: 9px;
+  background-color: #fff0c5;
+  border-radius: 5.53px / 6.14px;
+  transform: rotate(-6.75deg);
+}
+
+.questionrio .element-8 {
+  position: absolute;
+  width: 33px;
+  height: 36px;
+  top: 4px;
+  left: 112px;
+}
+
+.questionrio .overlap-8 {
+  position: relative;
+  width: 34px;
+  height: 36px;
+}
+
+.questionrio .ellipse-8 {
+  position: absolute;
+  width: 29px;
+  height: 32px;
+  top: 2px;
+  left: 2px;
+  transform: rotate(-8.12deg);
+}
+
+.questionrio .ellipse-9 {
+  position: absolute;
+  width: 11px;
+  height: 12px;
+  top: 8px;
+  left: 14px;
+  background-color: #e9debd;
+  border-radius: 5.53px / 6.14px;
+  transform: rotate(-173.20deg);
+}
+
+.questionrio .image-2 {
+  position: absolute;
+  width: 154px;
+  height: 123px;
+  top: 10px;
+  left: 8px;
+  transform: rotate(-8.12deg);
+}
+
+.questionrio .view-9 {
+  position: absolute;
+  width: 90px;
+  height: 49px;
+  top: 47px;
+  left: 40px;
+  transform: rotate(13.95deg);
+}
+
+.questionrio .overlap-9 {
+  position: absolute;
+  width: 38px;
+  height: 36px;
+  top: 13px;
+  left: 1px;
+}
+
+.questionrio .element-9 {
+  position: absolute;
+  width: 31px;
+  height: 29px;
+  top: 3px;
+  left: 3px;
+  background-color: #1d1d1d;
+  border-radius: 15.67px / 14.74px;
+  transform: rotate(-13.95deg);
+}
+
+.questionrio .view-10 {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 2px;
+  left: 21px;
+  background-color: #ffffff;
+  border-radius: 2.7px / 2.52px;
+}
+
+.questionrio .overlap-10 {
+  position: absolute;
+  width: 38px;
+  height: 36px;
+  top: 0;
+  left: 52px;
+}
+
+.questionrio .view-11 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 1px;
+  left: 19px;
+  background-color: #ffffff;
+  border-radius: 3.15px / 2.93px;
+}
+
+.questionrio .view-12 {
+  position: absolute;
+  width: 116px;
+  height: 66px;
+  top: 37px;
+  left: 28px;
+  transform: rotate(-12.30deg);
+}
+
+.questionrio .overlap-11 {
+  position: relative;
+  width: 115px;
+  height: 66px;
+  left: 1px;
+}
+
+.questionrio .rectangle-4 {
+  position: absolute;
+  width: 11px;
+  height: 39px;
+  top: 5px;
+  left: 18px;
+  background-color: #b8d3ff4c;
+  transform: rotate(31.17deg);
+}
+
+.questionrio .rectangle-5 {
+  position: absolute;
+  width: 7px;
+  height: 41px;
+  top: 21px;
+  left: 88px;
+  background-color: #b8d3ff1a;
+  transform: rotate(31.17deg);
+}
+
+.questionrio .line-2 {
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  top: 27px;
+  left: 50px;
+  transform: rotate(4.18deg);
+}
+
+.questionrio .ellipse-10 {
+  position: absolute;
+  width: 49px;
+  height: 46px;
+  top: 16px;
+  left: 61px;
+  border-radius: 24.51px / 22.97px;
+  border: 4.29px solid;
+  border-color: #1a44ae;
+  transform: rotate(12.30deg);
+  box-shadow: inset 0px 2.86px 2.86px #3e73f8, 4.29px 2.86px 5.72px #00000026;
+}
+
+.questionrio .ellipse-11 {
+  position: absolute;
+  width: 48px;
+  height: 45px;
+  top: 5px;
+  left: 4px;
+  border-radius: 23.83px / 22.33px;
+  border: 4.29px solid;
+  border-color: #1a44ae;
+  transform: rotate(12.30deg);
+  box-shadow: inset 0px 2.86px 2.86px #3e73f8, 4.29px 2.86px 5.72px #00000026;
+}
+
+.questionrio .view-13 {
+  position: absolute;
+  width: 14px;
+  height: 8px;
+  top: 83px;
+  left: 79px;
+  background-color: #1e1e1e;
+  border-radius: 7.15px / 4.06px;
+}
+
+.questionrio .ellipse-12 {
+  position: relative;
+  width: 4px;
+  height: 2px;
+  top: 2px;
+  left: 1px;
+  background-color: #ffffff;
+  border-radius: 1.78px / 1.12px;
+  transform: rotate(-21.41deg);
+}
+
+.questionrio .view-14 {
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top: 98px;
+  left: 73px;
+  transform: rotate(-11.17deg);
+}
+
+.questionrio .overlap-12 {
+  position: relative;
+  height: 19px;
+}
+
+.questionrio .vector-2 {
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  top: 1px;
+  left: 0;
+  transform: rotate(3.05deg);
+}
+
+.questionrio .intersect-2 {
+  position: absolute;
+  width: 19px;
+  height: 7px;
+  top: 10px;
+  left: 1px;
+  transform: rotate(3.05deg);
+}
+
+.questionrio .vector-3 {
+  position: absolute;
+  width: 16px;
+  height: 5px;
+  top: 2px;
+  left: 6px;
+  transform: rotate(3.05deg);
+}
+
+.questionrio .progress-bar {
+  position: absolute;
+  width: 1081px;
+  height: 39px;
+  top: 43px;
+  left: 117px;
+  background-color: #ffb8008c;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.questionrio .progress {
+  display: inline-flex;
+  height: 30px;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 5px 95px;
+  position: relative;
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    rgb(255, 184, 0) 0%,
+    rgb(255, 193, 7) 100%
+  );
+}
+
+.questionrio .div-2 {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+}
+
+.questionrio .overlap-13 {
+  position: absolute;
+  width: 190px;
+  height: 65px;
+  top: 769px;
+  left: 1044px;
+  border-radius: 100px;
+}
+
+.questionrio .rectangle-6 {
+  position: absolute;
+  width: 190px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  background-color: #ffc100;
+  border-radius: 100px;
+}
+
+.questionrio .text-wrapper-3 {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .overlap-14 {
+  position: absolute;
+  width: 190px;
+  height: 65px;
+  top: 769px;
+  left: 80px;
+  border-radius: 100px;
+}
+
+.questionrio .text-wrapper-4 {
+  position: absolute;
+  top: 10px;
+  left: 49px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .overlap-15 {
+  position: absolute;
+  width: 280px;
+  height: 110px;
+  top: 130px;
+  left: 304px;
+}
+
+.questionrio .dialog-baloon {
+  position: absolute;
+  width: 280px;
+  height: 110px;
+  top: 0;
+  left: 0;
+}
+
+.questionrio .union {
+  position: absolute;
+  width: 275px;
+  height: 108px;
+  top: 0;
+  left: 5px;
+}
+
+.questionrio .voc-quer-aprender {
+  position: absolute;
+  top: 27px;
+  left: 28px;
+  -webkit-text-stroke: 0.3px #1a315a;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #1a315a;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.questionrio .component {
+  position: absolute;
+  width: 521px;
+  height: 113px;
+  top: 359px;
+  left: 141px;
+}
+
+.questionrio .overlap-16 {
+  position: relative;
+  height: 113px;
+}
+
+.questionrio .rectangle-7 {
+  position: absolute;
+  width: 521px;
+  height: 93px;
+  top: 12px;
+  left: 0;
+  border-radius: 80px;
+  border: 7px solid;
+  border-color: #ffffff;
+}
+
+.questionrio .ilustracao-de {
+  position: absolute;
+  width: 110px;
+  height: 113px;
+  top: 0;
+  left: 29px;
+  object-fit: cover;
+}
+
+.questionrio .text-wrapper-5 {
+  position: absolute;
+  top: 30px;
+  left: 149px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .component-2 {
+  position: absolute;
+  width: 521px;
+  height: 93px;
+  top: 369px;
+  left: 687px;
+  border-radius: 80px;
+  border: 7px solid;
+  border-color: #ffffff;
+}
+
+.questionrio .text-wrapper-6 {
+  position: absolute;
+  top: 14px;
+  left: 144px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .element-fbc {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 0;
+  left: 46px;
+  object-fit: cover;
+}
+
+.questionrio .component-3 {
+  position: absolute;
+  width: 567px;
+  height: 93px;
+  top: 534px;
+  left: 402px;
+}
+
+.questionrio .overlap-17 {
+  position: relative;
+  width: 521px;
+  height: 93px;
+  border-radius: 80px;
+  border: 7px solid;
+  border-color: #ffffff;
+}
+
+.questionrio .overlap-group-3 {
+  position: absolute;
+  width: 68px;
+  height: 77px;
+  top: 3px;
+  left: 92px;
+}
+
+.questionrio .ellipse-13 {
+  position: absolute;
+  width: 68px;
+  height: 65px;
+  top: 12px;
+  left: 0;
+  background-color: #ffb800;
+  border-radius: 34px / 32.5px;
+}
+
+.questionrio .text-wrapper-7 {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .text-wrapper-8 {
+  position: absolute;
+  top: 17px;
+  left: 236px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.questionrio .text-wrapper-9 {
+  position: absolute;
+  width: 98px;
+  top: -357px;
+  left: -1422px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 29px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+</style>
+</head>
+
+  <body>
+    <div class="questionrio">
+      <div class="div">
+        <div class="text-wrapper">Gauss</div>
+        <div class="view">
+          <div class="overlap-wrapper">
+            <div class="overlap">
+              <div class="view-2">
+                <div class="element">
+                  <div class="overlap-group">
+                    <div class="ellipse"></div>
+                    <div class="ellipse-2"></div>
+                  </div>
+                </div>
+                <div class="overlap-group-wrapper">
+                  <div class="ellipse-wrapper"><div class="ellipse-3"></div></div>
+                </div>
+              </div>
+              <img class="image" src="https://c.animaapp.com/2VmB2s4P/img/-.svg" />
+              <div class="div-wrapper">
+                <div class="overlap-2">
+                  <img class="vector" src="https://c.animaapp.com/2VmB2s4P/img/vector-24.svg" />
+                  <img class="intersect" src="https://c.animaapp.com/2VmB2s4P/img/intersect.svg" />
+                  <img class="img" src="https://c.animaapp.com/2VmB2s4P/img/vector-26.svg" />
+                </div>
+              </div>
+              <div class="view-3">
+                <div class="overlap-3">
+                  <div class="element-2"></div>
+                  <div class="element-3"></div>
+                  <div class="element-4"></div>
+                  <div class="view-4"></div>
+                </div>
+                <div class="overlap-4">
+                  <div class="element-2"></div>
+                  <div class="element-5"></div>
+                  <div class="element-6"></div>
+                  <div class="view-5"></div>
+                </div>
+              </div>
+              <div class="view-6">
+                <div class="overlap-5">
+                  <div class="rectangle"></div>
+                  <div class="rectangle-2"></div>
+                  <img class="line" src="https://c.animaapp.com/2VmB2s4P/img/line-1.svg" />
+                  <div class="ellipse-4"></div>
+                  <div class="ellipse-5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="idioma-do-site">
+          <span class="span">Idioma do site:Português</span> <span class="text-wrapper-2">&nbsp;</span>
+        </p>
+        <img class="rectangle-3" src="img/rectangle-6.svg" />
+        <div class="overlap-6">
+          <div class="view-7">
+            <div class="overlap-7">
+              <div class="view-8">
+                <div class="element-7">
+                  <div class="overlap-group-2">
+                    <div class="ellipse-6"></div>
+                    <div class="ellipse-7"></div>
+                  </div>
+                </div>
+                <div class="element-8">
+                  <div class="overlap-8">
+                    <img class="ellipse-8" src="https://c.animaapp.com/2VmB2s4P/img/ellipse-4-1.svg" />
+                    <div class="ellipse-9"></div>
+                  </div>
+                </div>
+              </div>
+              <img class="image-2" src="https://c.animaapp.com/2VmB2s4P/img/--1.svg" />
+              <div class="view-9">
+                <div class="overlap-9">
+                  <div class="element-9"></div>
+                  <div class="view-10"></div>
+                </div>
+                <div class="overlap-10">
+                  <div class="element-9"></div>
+                  <div class="view-11"></div>
+                </div>
+              </div>
+              <div class="view-12">
+                <div class="overlap-11">
+                  <div class="rectangle-4"></div>
+                  <div class="rectangle-5"></div>
+                  <img class="line-2" src="https://c.animaapp.com/2VmB2s4P/img/line-1-1.svg" />
+                  <div class="ellipse-10"></div>
+                  <div class="ellipse-11"></div>
+                </div>
+              </div>
+              <div class="view-13"><div class="ellipse-12"></div></div>
+              <div class="view-14">
+                <div class="overlap-12">
+                  <img class="vector-2" src="https://c.animaapp.com/2VmB2s4P/img/vector-75.svg" />
+                  <img class="intersect-2" src="https://c.animaapp.com/2VmB2s4P/img/intersect-1.svg" />
+                  <img class="vector-3" src="https://c.animaapp.com/2VmB2s4P/img/vector-76.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress">
+              <div class="div-2"></div>
+              <div class="div-2"></div>
+            </div>
+          </div>
+          <div class="overlap-13" id= "questionario-2">
+            <div class="rectangle-6"></div>
+            <div class="text-wrapper-3">Continuar</div>
+          </div>
+          <div class="overlap-14" id="voltar">
+            <div class="rectangle-6"></div>
+            <div class="text-wrapper-4">Voltar</div>
+          </div>
+          <div class="overlap-15">
+            <div class="dialog-baloon"><img class="union" src="https://c.animaapp.com/2VmB2s4P/img/union.svg" /></div>
+            <div class="voc-quer-aprender">Você quer aprender<br />estatística para...</div>
+          </div>
+          <div class="component">
+            <div class="overlap-16">
+              <div class="rectangle-7"></div>
+              <img
+                class="ilustracao-de"
+                src="https://c.animaapp.com/2VmB2s4P/img/ilustracao-3d-de-chapeu-academico-com-borla-dourada--1--1@2x.png"
+              />
+              <div class="text-wrapper-5">Avançar na Educação</div>
+            </div>
+          </div>
+          <div class="component-2">
+            <div class="text-wrapper-6">Progredir na Carreira</div>
+            <img class="element-fbc" src="https://c.animaapp.com/2VmB2s4P/img/1f4bc-1@2x.png" />
+          </div>
+          <div class="component-3">
+            <div class="overlap-17">
+              <div class="overlap-group-3">
+                <div class="ellipse-13"></div>
+                <div class="text-wrapper-7">...</div>
+              </div>
+              <div class="text-wrapper-8">Outros</div>
+            </div>
+          </div>
+        </div>
+        <div class="text-wrapper-9">Avançar na educação</div>
+      </div>
+    </div>
+
+    <script>
+      
+      function redirecionar(url) {
+        window.location.href = url;
+      }
+      
+      document.getElementById("questionario-2").onclick = function() {
+        redirecionar("questionario2.html"); 
+      };
+
+      document.getElementById("voltar").onclick = function() {
+      redirecionar("login.html"); 
+      };
+
+    </script>
+  </body>
+</html>
