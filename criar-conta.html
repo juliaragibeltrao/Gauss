@@ -754,7 +754,7 @@
             <div class="text-wrapper">Entrar</div>
             <div class="overlap-9">
               <div class="rectangle-5"></div>
-              <div class="text-wrapper-2">Criar Conta</div>
+              <div id= "Criar-Conta" class="text-wrapper-2">Criar Conta</div>
             </div>
             <div class="text-wrapper-3">Ou</div>
             <img class="group" src="https://c.animaapp.com/LB5KvmPa/img/group@2x.png" />
@@ -795,5 +795,17 @@
         </div>
       </div>
     </div>
+    <script>
+      
+      function redirecionar(url) {
+        window.location.href = url;
+      }
+    
+
+      document.getElementById("Criar-Conta").onclick = function() {
+      redirecionar("telabemvindo2.html"); 
+      };
+
+    </script>
   </body>
 </html>
