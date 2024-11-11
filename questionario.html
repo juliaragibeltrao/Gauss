@@ -1091,11 +1091,11 @@
                 class="ilustracao-de"
                 src="https://c.animaapp.com/2VmB2s4P/img/ilustracao-3d-de-chapeu-academico-com-borla-dourada--1--1@2x.png"
               />
-              <div class="text-wrapper-5">Avançar na Educação</div>
+              <div id="avancar-educacao" class="text-wrapper-5">Avançar na Educação</div>
             </div>
           </div>
           <div class="component-2">
-            <div class="text-wrapper-6">Progredir na Carreira</div>
+            <div id="progredir-carreira" class="text-wrapper-6">Progredir na Carreira</div>
             <img class="element-fbc" src="https://c.animaapp.com/2VmB2s4P/img/1f4bc-1@2x.png" />
           </div>
           <div class="component-3">
@@ -1104,7 +1104,7 @@
                 <div class="ellipse-13"></div>
                 <div class="text-wrapper-7">...</div>
               </div>
-              <div class="text-wrapper-8">Outros</div>
+              <div id= "outros" class="text-wrapper-8">Outros</div>
             </div>
           </div>
         </div>
@@ -1118,6 +1118,18 @@
         window.location.href = url;
       }
       
+      document.getElementById("outros").onclick = function() {
+        redirecionar("questionario2.html"); 
+      };
+
+      document.getElementById("avancar-educacao").onclick = function() {
+        redirecionar("questionario2.html"); 
+      };
+
+      document.getElementById("progredir-carreira").onclick = function() {
+        redirecionar("questionario2.html"); 
+      };
+
       document.getElementById("questionario-2").onclick = function() {
         redirecionar("questionario2.html"); 
       };
