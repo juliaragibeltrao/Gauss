@@ -1510,7 +1510,7 @@
           <div class="CONTINUAR-wrapper"><div class="CONTINUAR">CONTINUAR &gt;</div></div>
           <div class="overlap-18">
             <div class="rectangle-10"></div>
-            <div class="text-wrapper-12">REFAZER</div>
+            <div id="voltar" class="text-wrapper-12">REFAZER</div>
             <div class="group-8">
               <div class="overlap-19">
                 <div class="ellipse-23"></div>
@@ -1526,5 +1526,15 @@
         </div>
       </div>
     </div>
+    <script>
+      
+        function redirecionar(url) {
+          window.location.href = url;
+        }
+        
+        document.getElementById("voltar").onclick = function() {
+        redirecionar("telaatividade.html");
+        };
+    </script>
   </body>
 </html>

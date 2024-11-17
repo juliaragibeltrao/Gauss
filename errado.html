@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
     <style>
-        .AT-resp-letra-a {
+  .AT-resp-letra-a {
   background-color: #1a315a;
   display: flex;
   flex-direction: row;
@@ -1920,7 +1920,7 @@
           <div class="CONTINUAR-wrapper"><div class="CONTINUAR">CONTINUAR &gt;</div></div>
           <div class="overlap-25">
             <div class="rectangle-12"></div>
-            <div class="text-wrapper-16">REFAZER</div>
+            <div id="voltar" class="text-wrapper-16">REFAZER</div>
             <div class="group-8">
               <div class="overlap-26">
                 <div class="ellipse-29"></div>
@@ -1936,5 +1936,15 @@
         </div>
       </div>
     </div>
+    <script>
+      
+      function redirecionar(url) {
+        window.location.href = url;
+      }
+      
+      document.getElementById("voltar").onclick = function() {
+      redirecionar("telaatividade.html");
+      };
+  </script> 
   </body>
 </html>
