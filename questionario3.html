@@ -996,12 +996,12 @@
             <div class="overlap-10">
               <div class="text-wrapper-3">5</div>
               <div class="rectangle-4"></div>
-              <div class="text-wrapper-4">5 min/dia</div>
+              <div id= "5-minutos" class="text-wrapper-4">5 min/dia</div>
             </div>
           </div>
-          <div class="component-2"><div class="text-wrapper-5">10 min/dia</div></div>
-          <div class="component-3"><div class="text-wrapper-6">15 min/dia</div></div>
-          <div class="component-4"><div class="text-wrapper-7">+20 min/dia</div></div>
+          <div id= "10-minutos" class="component-2"><div class="text-wrapper-5">10 min/dia</div></div>
+          <div id= "15-minutos" class="component-3"><div class="text-wrapper-6">15 min/dia</div></div>
+          <div id= "20-minutos" class="component-4"><div class="text-wrapper-7">+20 min/dia</div></div>
         </div>
         <div class="text-wrapper-8">Gauss</div>
         <div class="view-wrapper">
@@ -1070,6 +1070,21 @@
 
       document.getElementById("voltar").onclick = function() {
       redirecionar("questionario2.html"); 
+      };
+
+      document.getElementById("5-minutos").onclick = function() {
+        redirecionar("questionario4.html"); 
+      };
+
+      document.getElementById("10-minutos").onclick = function() {
+        redirecionar("questionario4.html"); 
+      };
+
+      document.getElementById("15-minutos").onclick = function() {
+        redirecionar("questionario4.html"); 
+      };
+      document.getElementById("20-minutos").onclick = function() {
+        redirecionar("questionario4.html"); 
       };
 
       

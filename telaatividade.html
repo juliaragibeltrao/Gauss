@@ -1369,33 +1369,33 @@
     </div>
      </div>
      <script>
-       
-       function redirecionar(url) {
-         window.location.href = url;
-       }
-       
-       document.getElementById("jogos").onclick = function() {
-       redirecionar("telajogos.html"); 
-       };
-
-       document.getElementById("conteudo").onclick = function() {
-       redirecionar("telaconteudo.html"); 
-       };
-
-       document.getElementById("video-aula").onclick = function() {
-       redirecionar("telavideoaula.html"); 
-       };
-
-       function verificarResposta(respostaSelecionada) {
-      
-      if (respostaSelecionada === 'C') {
-        window.location.href = "certo.html"; 
-      } else {
-                window.location.href = "errado.html";  // Redireciona para a página de erro
-            }
+      function redirecionar(url) {
+        window.location.href = url;
+      }
     
-    }
-      
-     </script>
+      document.getElementById("jogos").onclick = function () {
+        redirecionar("telajogos.html");
+      };
+    
+      document.getElementById("conteudo").onclick = function () {
+        redirecionar("telaconteudo.html");
+      };
+    
+      document.getElementById("video-aula").onclick = function () {
+        redirecionar("telavideoaula.html");
+      };
+    
+      function verificarResposta(respostaSelecionada) {
+        if (respostaSelecionada === 'C') {
+          window.location.href = "certo.html";
+        } else if (respostaSelecionada === 'A') {
+          window.location.href = "errado.html";
+        } else if (respostaSelecionada === 'B') {
+          window.location.href = "errado2.html";
+        } else if (respostaSelecionada === 'D') {
+          window.location.href = "errado3.html";
+        }
+      }
+    </script>
    </body>
  </html>

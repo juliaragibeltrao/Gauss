@@ -1136,7 +1136,7 @@
             </div>
           </div>
           <div class="component">
-            <div class="text-wrapper-3">Não sei nada Estatística</div>
+            <div id= "nao-sei" class="text-wrapper-3">Não sei nada Estatística</div>
             <img class="element-3" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
             <img class="element-4" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
             <img class="element-5" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
@@ -1149,9 +1149,9 @@
             <img class="element-10" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
             <img class="element-11" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
             <img class="element-12" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-1.svg" />
-            <div class="text-wrapper-4">Conheço pouco de estatística</div>
+            <div id= "conheco-pouco"class="text-wrapper-4">Conheço pouco de estatística</div>
           </div>
-          <div class="component-3">
+          <div id= "sei-o-basico" class="component-3">
             <img class="element-13" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-2.svg" />
             <img class="element-14" src="https://c.animaapp.com/8kXhBZEy/img/2451996-5-3.svg" />
             <img class="element-15" src="https://c.animaapp.com/8kXhBZEy/img/2451996-9.svg" />
@@ -1159,7 +1159,7 @@
             <img class="element-17" src="https://c.animaapp.com/8kXhBZEy/img/2451996-9.svg" />
             <p class="p">Sei o básico da Estatística</p>
           </div>
-          <div class="component-4">
+          <div id= "sou-expert" class="component-4">
             <img class="element-18" src="https://c.animaapp.com/8kXhBZEy/img/2451996-5-3.svg" />
             <img class="element-19" src="https://c.animaapp.com/8kXhBZEy/img/2451996-4-2.svg" />
             <img class="element-20" src="https://c.animaapp.com/8kXhBZEy/img/2451996-1-2.svg" />
@@ -1235,6 +1235,21 @@
 
       document.getElementById("voltar").onclick = function() {
       redirecionar("questionario.html"); 
+      };
+
+      document.getElementById("nao-sei").onclick = function() {
+        redirecionar("questionario3.html"); 
+      };
+
+      document.getElementById("conheco-pouco").onclick = function() {
+        redirecionar("questionario3.html"); 
+      };
+
+      document.getElementById("sei-o-basico").onclick = function() {
+        redirecionar("questionario3.html"); 
+      };
+      document.getElementById("sou-expert").onclick = function() {
+        redirecionar("questionario3.html"); 
       };
 
       
