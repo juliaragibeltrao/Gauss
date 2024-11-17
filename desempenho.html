@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .desktop {
+  background-color: #1a315a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .div {
+  background-color: #1a315a;
+  overflow: hidden;
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+}
+
+.desktop .overlap-group {
+  position: absolute;
+  width: 1440px;
+  height: 109px;
+  top: 0;
+  left: 0;
+  background-color: #2c436a;
+}
+
+.desktop .overlap {
+  position: absolute;
+  width: 282px;
+  height: 79px;
+  top: 20px;
+  left: 77px;
+  border-radius: 40px;
+}
+
+.desktop .rectangle {
+  position: absolute;
+  width: 282px;
+  height: 79px;
+  top: 0;
+  left: 0;
+  background-color: #1a315a;
+  border-radius: 40px;
+}
+
+.desktop .text-wrapper {
+  position: absolute;
+  top: 16px;
+  left: 87px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .image {
+  top: 5px;
+  left: 8px;
+  position: absolute;
+  width: 66px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.desktop .ellipse {
+  top: 5px;
+  left: 6px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: 3px solid;
+  border-color: #ffffff;
+}
+
+.desktop .text-wrapper-2 {
+  position: absolute;
+  top: 39px;
+  left: 1223px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .cpia-de-projeto {
+  top: 18px;
+  left: 1133px;
+  position: absolute;
+  width: 80px;
+  height: 75px;
+}
+
+.desktop .vector {
+  position: absolute;
+  width: 27px;
+  height: 13px;
+  top: 60px;
+  left: 1353px;
+}
+
+.desktop .overlap-2 {
+  position: absolute;
+  width: 1371px;
+  height: 86px;
+  top: 263px;
+  left: 53px;
+}
+
+.desktop .img {
+  position: absolute;
+  width: 1334px;
+  height: 84px;
+  top: 2px;
+  left: 0;
+}
+
+.desktop .text-wrapper-3 {
+  position: absolute;
+  top: 26px;
+  left: 47px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .text-wrapper-4 {
+  position: absolute;
+  top: 26px;
+  left: 466px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .text-wrapper-5 {
+  position: absolute;
+  top: 22px;
+  left: 760px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .LTIMA-INTERA-o {
+  position: absolute;
+  width: 390px;
+  top: 0;
+  left: 981px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .medidas-de-posi-o-wrapper {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 393px;
+  left: 53px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-6 {
+  position: absolute;
+  width: 240px;
+  top: 20px;
+  left: 42px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .medidas-de-dispers-o-wrapper {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 528px;
+  left: 53px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .div-wrapper {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 664px;
+  left: 50px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .overlap-3 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 801px;
+  left: 51px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-7 {
+  position: absolute;
+  width: 283px;
+  top: 19px;
+  left: 19px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .overlap-4 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 393px;
+  left: 391px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-8 {
+  width: 240px;
+  top: 16px;
+  left: 42px;
+  font-size: 40px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .overlap-5 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 528px;
+  left: 391px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .overlap-6 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 664px;
+  left: 388px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-9 {
+  width: 295px;
+  top: 19px;
+  left: 14px;
+  font-size: 38px;
+  position: absolute;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .overlap-7 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 801px;
+  left: 389px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-105.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-10 {
+  position: absolute;
+  width: 295px;
+  top: 15px;
+  left: 13px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 38px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .overlap-8 {
+  position: absolute;
+  width: 331px;
+  height: 128px;
+  top: 393px;
+  left: 729px;
+}
+
+.desktop .rectangle-2 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 0;
+  left: 0;
+}
+
+.desktop .text-wrapper-11 {
+  position: absolute;
+  width: 108px;
+  top: 45px;
+  left: 223px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .line {
+  position: absolute;
+  width: 218px;
+  height: 15px;
+  top: 60px;
+  left: 4px;
+}
+
+.desktop .line-2 {
+  position: absolute;
+  width: 57px;
+  height: 16px;
+  top: 60px;
+  left: 4px;
+}
+
+.desktop .overlap-9 {
+  position: absolute;
+  width: 331px;
+  height: 128px;
+  top: 528px;
+  left: 729px;
+}
+
+.desktop .line-3 {
+  position: absolute;
+  width: 218px;
+  height: 15px;
+  top: 57px;
+  left: 5px;
+}
+
+.desktop .line-4 {
+  position: absolute;
+  width: 171px;
+  height: 15px;
+  top: 57px;
+  left: 5px;
+}
+
+.desktop .overlap-10 {
+  position: absolute;
+  width: 331px;
+  height: 128px;
+  top: 664px;
+  left: 726px;
+}
+
+.desktop .line-5 {
+  position: absolute;
+  width: 123px;
+  height: 16px;
+  top: 57px;
+  left: 4px;
+}
+
+.desktop .overlap-11 {
+  position: absolute;
+  width: 331px;
+  height: 128px;
+  top: 801px;
+  left: 727px;
+}
+
+.desktop .overlap-12 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 393px;
+  left: 1067px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-12 {
+  position: absolute;
+  width: 274px;
+  top: 41px;
+  left: 28px;
+  font-family: "Inter", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 44px;
+}
+
+.desktop .overlap-13 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 528px;
+  left: 1067px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .overlap-14 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 664px;
+  left: 1064px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .overlap-15 {
+  position: absolute;
+  width: 323px;
+  height: 128px;
+  top: 801px;
+  left: 1065px;
+  background-image: url(https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg);
+  background-size: 100% 100%;
+}
+
+.desktop .text-wrapper-13 {
+  position: absolute;
+  width: 473px;
+  top: 167px;
+  left: 164px;
+  font-family: "Inter", Helvetica;
+  font-weight: 800;
+  color: #ffc100;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .overlap-16 {
+  position: absolute;
+  width: 1440px;
+  height: 109px;
+  top: -5424px;
+  left: 2210px;
+  background-color: #2c436a;
+}
+
+.desktop .overlap-17 {
+  position: absolute;
+  width: 302px;
+  height: 99px;
+  top: 10px;
+  left: 67px;
+}
+
+.desktop .frame {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+  align-items: flex-start;
+  top: 0;
+  left: 0;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.desktop .rectangle-3 {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 79px;
+  background-color: #1a315a;
+  border-radius: 40px;
+}
+
+.desktop .text-wrapper-14 {
+  position: absolute;
+  top: 26px;
+  left: 97px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 50px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .ellipse-2 {
+  top: 15px;
+  left: 16px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  border: 3px solid;
+  border-color: #ffffff;
+}
+
+.desktop .frame-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  top: 30px;
+  left: 1213px;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+}
+
+.desktop .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+.desktop .image-2 {
+  top: -4878px;
+  left: -10165px;
+  position: absolute;
+  width: 66px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.desktop .cpia-de-projeto-2 {
+  top: -4885px;
+  left: -9117px;
+  position: absolute;
+  width: 80px;
+  height: 75px;
+}
+
+.desktop .vector-2 {
+  position: absolute;
+  width: 13px;
+  height: 27px;
+  top: -4830px;
+  left: -8897px;
+}
+
+.desktop .arrow-left-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 135px;
+  left: 53px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="overlap-group">
+          <div class="overlap">
+            <div class="rectangle"></div>
+            <div class="text-wrapper">Gauss</div>
+            <img class="image" src="https://c.animaapp.com/5dnIDdjT/img/image-42@2x.png" />
+            <div class="ellipse"></div>
+          </div>
+          <div class="text-wrapper-2">Marina</div>
+          <img
+            class="cpia-de-projeto"
+            src="https://c.animaapp.com/5dnIDdjT/img/c-pia-de-projeto-extensionista-3-5@2x.png"
+          />
+          <img class="vector" src="https://c.animaapp.com/5dnIDdjT/img/vector.svg" />
+        </div>
+        <div class="overlap-2">
+          <img class="img" src="https://c.animaapp.com/5dnIDdjT/img/rectangle-91.svg" />
+          <div class="text-wrapper-3">CONTEÚDO</div>
+          <div class="text-wrapper-4">TIPO</div>
+          <div class="text-wrapper-5">STATUS</div>
+          <div class="LTIMA-INTERA-o">ÚLTIMA <br />INTERAÇÃO</div>
+        </div>
+        <div class="medidas-de-posi-o-wrapper">
+          <div class="text-wrapper-6">Medidas de <br />Posição</div>
+        </div>
+        <div class="medidas-de-dispers-o-wrapper">
+          <div class="text-wrapper-6">Medidas de <br />Dispersão</div>
+        </div>
+        <div class="div-wrapper"><div class="text-wrapper-6">Desvio Padrão</div></div>
+        <div class="overlap-3"><div class="text-wrapper-7">Importância das medidas</div></div>
+        <div class="overlap-4"><div class="text-wrapper-8">Conteúdo Completo</div></div>
+        <div class="overlap-5"><div class="text-wrapper-8">Conteúdo Completo</div></div>
+        <div class="overlap-6"><div class="text-wrapper-9">Conteúdo Complementar</div></div>
+        <div class="overlap-7"><div class="text-wrapper-10">Conteúdo Complementar</div></div>
+        <div class="overlap-8">
+          <img class="rectangle-2" src="https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg" />
+          <div class="text-wrapper-11">15%</div>
+          <img class="line" src="https://c.animaapp.com/5dnIDdjT/img/line-2.svg" />
+          <img class="line-2" src="https://c.animaapp.com/5dnIDdjT/img/line-3.svg" />
+        </div>
+        <div class="overlap-9">
+          <img class="rectangle-2" src="https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg" />
+          <div class="text-wrapper-11">75%</div>
+          <img class="line-3" src="https://c.animaapp.com/5dnIDdjT/img/line-6.svg" />
+          <img class="line-4" src="https://c.animaapp.com/5dnIDdjT/img/line-7.svg" />
+        </div>
+        <div class="overlap-10">
+          <img class="rectangle-2" src="https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg" />
+          <div class="text-wrapper-11">50%</div>
+          <img class="line-3" src="https://c.animaapp.com/5dnIDdjT/img/line-6.svg" />
+          <img class="line-5" src="https://c.animaapp.com/5dnIDdjT/img/line-8.svg" />
+        </div>
+        <div class="overlap-11">
+          <img class="rectangle-2" src="https://c.animaapp.com/5dnIDdjT/img/rectangle-107.svg" />
+          <div class="text-wrapper-11">0%</div>
+          <img class="line-3" src="https://c.animaapp.com/5dnIDdjT/img/line-6.svg" />
+        </div>
+        <div class="overlap-12"><div class="text-wrapper-12">03,NOV,2024</div></div>
+        <div class="overlap-13"><div class="text-wrapper-12">13, OUT,2024</div></div>
+        <div class="overlap-14"><div class="text-wrapper-12">20,OUT,2024</div></div>
+        <div class="overlap-15"><div class="text-wrapper-12">______</div></div>
+        <div class="text-wrapper-13">DESEMPENHO:</div>
+        <div class="overlap-16">
+          <div class="overlap-17">
+            <div class="frame"><div class="rectangle-3"></div></div>
+            <div class="text-wrapper-14">Gauss</div>
+            <div class="ellipse-2"></div>
+          </div>
+          <div class="frame-2"><div class="text-wrapper-15">Marina</div></div>
+        </div>
+        <img class="image-2" src="https://c.animaapp.com/5dnIDdjT/img/c-pia-de-projeto-extensionista-3-20@2x.png" />
+        <img
+          class="cpia-de-projeto-2"
+          src="https://c.animaapp.com/5dnIDdjT/img/c-pia-de-projeto-extensionista-3-20@2x.png"
+        />
+        <img class="vector-2" src="img/vector.svg" />
+        <img class="arrow-left-circle" src="https://c.animaapp.com/5dnIDdjT/img/arrow-left-circle.svg" />
+      </div>
+    </div>
+  </body>
+</html>
